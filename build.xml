@@ -1,4 +1,4 @@
-<project name="helloworld" default="car">
+<project name="helloworld" default="far">
 	<property name="src" location="src/java" />
 	<property name="libcompile" location="lib/compile" />
 	<property name="libruntime" location="lib/runtime" />
@@ -36,7 +36,7 @@
 		</javac>
 	</target>
 
-	<target name="car" depends="compile">
+	<target name="far" depends="compile">
 		<war destfile="${build}/${ant.project.name}-${version}.war"
 			webxml="${webxml}">
 			<fileset dir="${web}" />
